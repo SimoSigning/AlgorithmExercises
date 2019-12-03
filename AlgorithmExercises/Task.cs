@@ -6,6 +6,107 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        /*Write a C# Sharp program to check whether two given integers are in the range 40..50 inclusive, or they are both in the range 50..60 inclusive.*/
+        public bool task20(int a, int b)
+        {
+            //min løsning
+            return (a >= 40 && a <= 50 && b >= 40 && b <= 50) || (a >= 50 && a <= 60 && b >= 50 && b <= 60);
+            //w3resource løsning
+          //  return (x >= 40 && x <= 50 && y >= 40 && y <= 50) || (x >= 50 && x <= 60 && y >= 50 && y <= 60);
+        }
+        public int task19(int a, int b)
+        {
+            //min løsning
+            int compare01 = Math.Abs(100 - a);
+            int compare02 = Math.Abs(100 - b);
+            if(compare01 < compare02)
+            {
+                return a;
+            }
+            else if(compare02 < compare01)
+            {
+                return b;
+            }
+            else
+            {
+                return 0;
+            }
+            //w3resource løsning
+            /*const int n = 100;
+            var val = Math.Abs(x - n);
+            var val2 = Math.Abs(y - n);
+
+            return val == val2 ? 0 : (val < val2 ? x : y);*/
+        }
+
+        public int task18(int a, int b, int c)
+        {
+            //min løsning
+            int[] ints = { a, b, c };
+            int max = ints[0];
+            for (int i = 0; i < ints.Length; i++)
+            {
+                if(ints[i] > max)
+                {
+                    max = ints[i];
+                }
+            }
+            return max;
+            //w3resource løsning
+            /*            var max = Math.Max(x, Math.Max(y, z));
+            return max;*/
+        }
+        public string task17(string a)
+        {
+            //min løsning
+            return a.Substring(1, 2) == "yt" ? a.Remove(1, 2) : a;
+            //w3resource løsning
+            //return str.Substring(1, 2).Equals("yt") ? str.Remove(1, 2) : str;
+        }
+        public bool task16(int a, int b)
+        {
+            //min løsning
+            return a >= 20 && a <= 50 || b >= 20 && b <= 50;
+            //w3resource løsning
+            //return (x >= 20 && x <= 50) || (y >= 20 && y <= 50);
+        }
+        public bool task15(int a, int b, int c)
+        {
+            //min løsning
+            return a >= 20 && a <= 50 || b >=20 && b<=50 || c >= 20 && c <= 50;
+            //w3resource løsning
+            //return (x >= 20 && x <= 50) || (y >= 20 && y <= 50) || (z >= 20 && z <= 50);
+        }
+        public bool task14(int a, int b)
+        {
+            //min løsning
+            return a >= 100 && a <= 200 || b >= 100 && b <= 200;
+            //w3resource løsning
+            //return (x >= 100 && x <= 200) || (y >= 100 && y <= 200);
+        }
+        public bool task13(int a, int b)
+        {
+            //min løsning
+            return a < 0 && b > 100 || b > 100 && a < 0;
+            //w3resource løsning
+           // return temp1 < 0 && temp2 > 100 || temp2 < 0 && temp1 > 100;
+        }
+
+        public bool task12(string a)
+        {
+            // min løsning
+            if(a.Length>1)
+            {
+                return a.Substring(0, 2) == "C#";
+            }
+            else
+            {
+                return false;
+            }
+            // w3resource løsning
+            /*return (str.Length < 3 && str.Equals("C#")) || (str.StartsWith("C#") && str[2] == ' ');*/
+        }
+
         public string task11(string a)
         {
             //min løsning
