@@ -7,11 +7,16 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //task21
+            Console.WriteLine(currentTask.task21(78, 95));
+            Console.WriteLine(currentTask.task21(20, 30));
+            Console.WriteLine(currentTask.task21(21, 25));
+            Console.WriteLine(currentTask.task21(28, 28));
             //task20
-            Console.WriteLine(currentTask.task20(78, 95));
+           /* Console.WriteLine(currentTask.task20(78, 95));
             Console.WriteLine(currentTask.task20(25, 35));
             Console.WriteLine(currentTask.task20(40, 50));
-            Console.WriteLine(currentTask.task20(55, 60));
+            Console.WriteLine(currentTask.task20(55, 60));*/
 
             //task19
             /*  Console.WriteLine(currentTask.task19(78, 95));

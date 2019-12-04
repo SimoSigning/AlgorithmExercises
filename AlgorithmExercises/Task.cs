@@ -6,6 +6,49 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public int task21(int a, int b)
+        {
+            // Min løsning
+            if(a >=20 && a <=30 && b >=20 && b<=30)
+            {
+                if(a >= b)
+                {
+                    return a;
+                }
+                else 
+                {
+                    return b;
+                }
+            }
+            else
+            {
+                return 0;
+            }
+            //w3resource løsning
+         /*   if (x >= 20 && x <= 30 && y >= 20 && y <= 30)
+            {
+                if (x >= y)
+                {
+                    return x;
+                }
+                else
+                {
+                    return y;
+                }
+            }
+            else if (x >= 20 && y <= 30)
+            {
+                return x;
+            }
+            else if (y >= 20 && y <= 30)
+            {
+                return y;
+            }
+            else
+            {
+                return 0;
+            }*/
+        }
         /*Write a C# Sharp program to check whether two given integers are in the range 40..50 inclusive, or they are both in the range 50..60 inclusive.*/
         public bool task20(int a, int b)
         {
