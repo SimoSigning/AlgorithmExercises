@@ -6,6 +6,76 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public string task25(string a, int b)
+        {
+            // min løsning
+            string FirstA = a;
+            for (int i = 0; i < b-1; i++)
+            {
+                FirstA = FirstA + a;
+            }
+            return FirstA;
+            //w3resource løsning
+        }
+        public string task24(string a)
+        {
+            //min løsning
+            if(a.Length > 3)
+            {
+                return a.Substring(0, a.Length - 3).ToString() + a.Substring(a.Length - 3, 3).ToString().ToUpper();
+            }
+            else
+            {
+                return a.ToUpper();
+            }
+            //w3resource løsning
+            //return str.Length < 3 ? str.ToUpper() : str.Remove(str.Length - 3) + str.Substring(str.Length - 3).ToUpper();
+        }
+        public bool task23(int a, int b)
+        {
+            //min løsning
+            string aString = a.ToString();
+            string bString = b.ToString();
+            string aLastDigit = aString.Substring(aString.Length - 1, 1);
+            string bLastDigit = bString.Substring(bString.Length - 1, 1);
+            return aLastDigit == bLastDigit;
+            //w3resource løsning
+            /*
+             // note til selv: Remainderen er altid den samme hvis de sidste cifre er ens. Det havde jeg sgu aldrig tænkt over.
+             return Math.Abs(x % 10) == Math.Abs(y % 10);
+             */
+        }
+        /*
+         12 % 10 = 2
+         122 % 10 = 
+             */
+        public bool task22(string a)
+        {
+            // min løsning
+            int counter = 0;
+            for (int i = 0; i < a.Length; i++)
+			{
+                if(a[i] == 'z' || a[i] == 'Z')
+                {
+                    counter++;
+                }
+			}
+            return counter > 2 && counter < 4;
+            //w3resource løsning
+            /*
+            int ctr = 0;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == 'z')
+                {
+                    ctr++;
+                }
+            }
+
+            return ctr > 1 && ctr < 4;
+             */
+        }
         public int task21(int a, int b)
         {
             // Min løsning

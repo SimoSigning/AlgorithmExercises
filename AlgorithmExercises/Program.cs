@@ -7,16 +7,38 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //task25
+            Console.WriteLine(currentTask.task25("JS", 2));
+            Console.WriteLine(currentTask.task25("JS", 3));
+            Console.WriteLine(currentTask.task25("JS", 1));
+
+            //task24
+            /*   Console.WriteLine(currentTask.task24("Python"));
+               Console.WriteLine(currentTask.task24("Javascript"));
+               Console.WriteLine(currentTask.task24("js"));
+               Console.WriteLine(currentTask.task24("PHP"));*/
+
+            //task23
+            /*   Console.WriteLine(currentTask.task23(123, 456));
+               Console.WriteLine(currentTask.task23(12, 512));
+               Console.WriteLine(currentTask.task23(7, 87));
+               Console.WriteLine(currentTask.task23(12, 45));*/
+
+            //task22
+            /*   Console.WriteLine(currentTask.task22("frizz"));
+               Console.WriteLine(currentTask.task22("zane"));
+               Console.WriteLine(currentTask.task22("Zazz"));
+               Console.WriteLine(currentTask.task22("false"));*/
             //task21
-            Console.WriteLine(currentTask.task21(78, 95));
-            Console.WriteLine(currentTask.task21(20, 30));
-            Console.WriteLine(currentTask.task21(21, 25));
-            Console.WriteLine(currentTask.task21(28, 28));
+            /*  Console.WriteLine(currentTask.task21(78, 95));
+              Console.WriteLine(currentTask.task21(20, 30));
+              Console.WriteLine(currentTask.task21(21, 25));
+              Console.WriteLine(currentTask.task21(28, 28));*/
             //task20
-           /* Console.WriteLine(currentTask.task20(78, 95));
-            Console.WriteLine(currentTask.task20(25, 35));
-            Console.WriteLine(currentTask.task20(40, 50));
-            Console.WriteLine(currentTask.task20(55, 60));*/
+            /* Console.WriteLine(currentTask.task20(78, 95));
+             Console.WriteLine(currentTask.task20(25, 35));
+             Console.WriteLine(currentTask.task20(40, 50));
+             Console.WriteLine(currentTask.task20(55, 60));*/
 
             //task19
             /*  Console.WriteLine(currentTask.task19(78, 95));
