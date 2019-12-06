@@ -6,6 +6,124 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public string task30(string a)
+        {
+            return "42";
+        }
+        public string task29(string a)
+        {
+            //Min løsning
+            string Concatinator = string.Empty;
+            for (int i = 0; i < a.Length; i+=2)
+            {
+                Concatinator += a[i].ToString();
+            }
+            return Concatinator;
+            //w3resource løsning (denne looper igennem dem alle og validere bare på lige tal da hver andet tal er lige og derfor
+            // kan man på basis af dette lave sin streng med hver anden character. Om det er smartere at den skal loope igennem hele strengen er et godt spørgsmål)
+            /*           
+            var result = string.Empty;
+            for (var i = 0; i < s.Length; i++)
+             {
+                 if (i % 2 == 0) result += s[i];
+             }
+            return result;*/
+        }
+        public bool task28(string a)
+        {
+            //min løsning
+            bool Returner = false;
+            for (int i = 0; i <= a.Length-2; i++)
+            {
+                if(a.Substring(i,1) == "a")
+                {
+                    if(a.Substring(i+1,1) == "a")
+                    {
+                        Returner = true;
+                        break;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+            return Returner;
+
+            //w3resource løsning
+            /*
+            var counter = 0;
+            for (var i = 0; i < str.Length-1; i++)
+            {
+                if (str[i].Equals('a')) counter++;
+                if(str.Substring(i, 2).Equals("aa") && counter < 2) 
+                return true;
+            }
+            return false;
+             */
+        }
+        public int task27(string a)
+        {
+            //min løsning
+            int counter = 0;
+            for (int i = 0; i <= a.Length-2; i++)
+            {
+                if(a.Substring(i,2) == "aa")
+                {
+                    counter++;
+                }
+            }
+            return counter;
+            //w3resource løsning
+            /*
+                         int ctr_aa = 0;
+            for (int i = 0; i < s.Length - 1; i++)
+            {
+                if (s.Substring(i, 2) == "aa")
+                {
+                    ctr_aa++;
+                }
+            }
+            return ctr_aa;
+             */
+        }
+        public string task26(string a, int n)
+        {
+            //min løsning
+            string Returner = string.Empty; 
+            if(a.Length >= 3)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    Returner += a.Substring(0, 3);
+                }
+                return Returner;
+            }
+            else
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    Returner += a;
+                }
+                return Returner;
+            }
+            //w3resource løsning
+            /*
+             var result = string.Empty;
+            var frontOfString = 3;
+
+            if (frontOfString > s.Length)
+                frontOfString = s.Length;
+
+            var front = s.Substring(0, frontOfString);
+
+            for (var i = 0; i < n; i++)
+            {
+                result += front;
+            }
+            return result;
+             */
+        }
         public string task25(string a, int b)
         {
             // min løsning

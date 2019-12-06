@@ -7,10 +7,29 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //task29
+            Console.WriteLine(currentTask.task29("Python"));
+            Console.WriteLine(currentTask.task29("PHP"));
+            Console.WriteLine(currentTask.task29("JS"));
+
+            //task28
+            /*    Console.WriteLine(currentTask.task28("caabb"));
+                Console.WriteLine(currentTask.task28("babaaba"));
+                Console.WriteLine(currentTask.task28("aaaaa"));*/
+
+            //task27
+            /*  Console.WriteLine(currentTask.task27("bbaaccaag"));
+              Console.WriteLine(currentTask.task27("jjkiaaasew"));
+              Console.WriteLine(currentTask.task27("JSaaakoiaa"));*/
+
+            //task26
+            /*   Console.WriteLine(currentTask.task26("Python", 2));
+               Console.WriteLine(currentTask.task26("Python", 3));
+               Console.WriteLine(currentTask.task26("JS", 3));*/
             //task25
-            Console.WriteLine(currentTask.task25("JS", 2));
-            Console.WriteLine(currentTask.task25("JS", 3));
-            Console.WriteLine(currentTask.task25("JS", 1));
+            /* Console.WriteLine(currentTask.task25("JS", 2));
+             Console.WriteLine(currentTask.task25("JS", 3));
+             Console.WriteLine(currentTask.task25("JS", 1));*/
 
             //task24
             /*   Console.WriteLine(currentTask.task24("Python"));
