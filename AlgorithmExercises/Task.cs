@@ -6,9 +6,258 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        //min løsning
+        public int task40(int a, int b)
+        {
+            int sum = a + b;
+            if(sum >= 10 && sum <= 20)
+            {
+                return 30;
+            }
+            else
+            {
+                return sum;
+            }
+        }
+        //w3resource løsning
+        /*  return a + b >= 10 && a + b <= 20 ? 30 : a + b;*/
+        public bool task39(int[] a)
+        {
+            //min løsning
+            bool Returner = false;
+            for (int i = 0; i < a.Length-2; i++)
+            {
+                if(a[i] == a[i+1] && a[i] == a[i+2])
+                {
+                    Returner = true;
+                    break;
+                }
+            }
+            return Returner;
+            //w3resource løsning
+            /*
+            int arra_len = nums.Length - 1, n = 0;
+			for (int i = 0; i < arra_len; i++)
+            {
+                 n = nums[i];
+				if (n == nums[i + 1] && n == nums[i + 2]) return true;
+            }
+            return false;
+             */
+        }
+        public int task38(int[] a)
+        {
+            //min løsning
+            int counter = 0;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if(a[i] == 5 && a[i+1] == 5 || a[i] == 5 && a[i+1] == 6)
+                {
+                    counter++;
+                }
+            }
+            return counter;
+            //w3resource løsning
+            /*
+                         var ctr = 0;
+            for (var i = 0; i < numbers.Length - 1; i++)
+            {
+                if (numbers[i].Equals(5) && (numbers[i + 1].Equals(5) || numbers[i + 1].Equals(6))) ctr++;
+            }
+            return ctr;
+             */
+        }
+        public string task37(string a)
+        {
+            // min løsning
+            int loopcounter = 0;
+            int sequencecounter = 0;
+            string concatinator = string.Empty;
+            while (loopcounter < a.Length)
+            {
+                if(sequencecounter < 2)
+                {
+                    concatinator += a[loopcounter];
+                    loopcounter++;
+                    sequencecounter++;
+                }
+                else
+                {
+                    sequencecounter = 0;
+                    loopcounter += 2;
+                }
+            }
+            return concatinator;
+            //w3resource løsning
+            /*
+                        var result = string.Empty;
+            for (var i = 0; i < str1.Length; i += 4)
+            {
+                var c = i + 2;
+                var n = 0;
+                n += c > str1.Length ? 1 : 2;
+                result += str1.Substring(i, n);
+            }
+            return result;
+             */
+        }
+        public string task36(string a, char r)
+        {
+            //min løsning
+            string Temp = string.Empty;
+            bool HasR = false;
+            for (int i = 1; i < a.Length-1; i++)
+            {
+                if (a[i] == r)
+                {
+                    HasR = true;
+                    Temp = a.Remove(i, 1);
+                    a = Temp;
+                }
+            }
+            if(HasR == true)
+            {
+                return Temp;
+            }
+            else
+            {
+                return a;
+            }
+            //w3resource løsning (Kunne selvfølgelig bare have ladet strengen være lig med sig selv uden den karakter derp).
+            /*
+                           for (int i = str1.Length - 2; i > 0; i--)
+            {
+                if (str1[i] == c[0])
+                {
+                    str1 = str1.Remove(i, 1);
+                }
+            }
+
+            return str1;
+             */
+        }
+        public int task35(string a, string b)
+        {
+            //min løsning
+            int counter = 0;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                string TempA = a.Substring(i, 2);
+                for (int j = 0; j < b.Length-1; j++)
+                {
+                    string TempB = b.Substring(j, 2);
+                    if(TempA == TempB)
+                    {
+                        counter++;
+                    }
+                }
+            }
+            return counter;
+            //w3resource løsning
+            /*
+                         var ctr = 0;
+            for (var i = 0; i < str1.Length-1; i++)
+            {
+                var firstString = str1.Substring(i, 2);
+                for (var j = 0; j < str2.Length-1; j++)
+                {
+                    var secondString = str2.Substring(j, 2);
+                    if (firstString.Equals(secondString)) 
+                    ctr++;
+                }
+            }
+            return ctr;
+             */
+        }
+        public bool task34(int[] a)
+        {
+            // min løsning
+            bool Returner = false;
+            for (int i = 0; i <= a.Length-3; i++)
+            {
+                if(a[i] == 1 && a[i+1] == 2 && a[i+2] == 3)
+                {
+                    Returner = true;
+                    break;
+                }
+            }
+            return Returner;
+        }
+        public bool task33(int[] a, int b)
+        {
+            //min løsning
+            bool Returner = false;
+            for (int i = 0; i < 4; i++)
+            {
+                if(a[i] == b)
+                {
+                    Returner = true;
+                    break;
+                }
+            }
+            return Returner;
+            //w3resource løsning
+            //return numbers.Length < 4 ? numbers.Contains(n) : numbers.Take(4).Contains(n);
+        }
+        public bool task32(int[] a, int b)
+        {
+            //Min løsning
+            bool Returner = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == b)
+                {
+                    Returner = true;
+                    break;
+                }
+            }
+            return Returner;
+            //w3resource løsning
+            /*
+             return numbers.Length < 4 ? numbers.Contains(n) : numbers.Take(4).Contains(n);
+             */
+        }
+        public int task31(string a)
+        {
+            //Min løsning
+            string LastTwo = a.Substring(a.Length - 2, 2);
+            int counter = 0;
+            for (int i = 0; i <= a.Length-4; i++)
+            {
+                if(a.Substring(i,2) == LastTwo)
+                {
+                    counter++;
+                }
+            }
+            return counter;
+            //w3resource løsning
+            /*
+            var last_two_char = str.Substring(str.Length-2);
+            var ctr = 0;
+
+            for (var i = 0; i < str.Length-2; i++)
+            {
+               if (str.Substring(i, 2).Equals(last_two_char)) ctr++;
+            }
+            return ctr;
+             */
+        }
         public string task30(string a)
         {
-            return "42";
+            //Min løsning
+            string Concatinator = string.Empty;
+            for (int i = 0; i < a.Length; i++)
+            {
+                Concatinator = Concatinator + a.Substring(0, i+1);
+            }
+            return Concatinator;
+            //w3resource løsning
+          /*  var result = string.Empty;
+            for (var i = 0; i < str.Length; i++)
+            {
+                result += str.Substring(0, i + 1);
+            }
+            return result;*/
         }
         public string task29(string a)
         {

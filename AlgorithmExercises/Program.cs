@@ -7,15 +7,66 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
-            //task29
-            Console.WriteLine(currentTask.task29("Python"));
-            Console.WriteLine(currentTask.task29("PHP"));
-            Console.WriteLine(currentTask.task29("JS"));
+            //task40
+            Console.WriteLine(currentTask.task40(12, 17));
+            Console.WriteLine(currentTask.task40(2, 17));
+            Console.WriteLine(currentTask.task40(22, 17));
+            Console.WriteLine(currentTask.task40(20, 0));
 
-            //task28
-            /*    Console.WriteLine(currentTask.task28("caabb"));
-                Console.WriteLine(currentTask.task28("babaaba"));
-                Console.WriteLine(currentTask.task28("aaaaa"));*/
+            //task39
+            /*  Console.WriteLine(currentTask.task39(new[] { 1, 1, 2, 2, 1 }));
+              Console.WriteLine(currentTask.task39(new[] { 1, 1, 2, 1, 2, 3 }));
+              Console.WriteLine(currentTask.task39(new[] { 1, 1, 1, 2, 2, 2, 1 }));*/
+
+            //task38
+            /* Console.WriteLine(currentTask.task38(new[] { 5, 5, 2 }));
+             Console.WriteLine(currentTask.task38(new[] { 5, 5, 2, 5, 5 }));
+             Console.WriteLine(currentTask.task38(new[] { 5, 6, 2, 9 }));*/
+            //task37
+            /*  Console.WriteLine(currentTask.task37("Python"));
+              Console.WriteLine(currentTask.task37("JavaScript"));
+              Console.WriteLine(currentTask.task37("HTML"));*/
+            //task36
+            /*   Console.WriteLine(currentTask.task36("xxHxix", 'x'));
+               Console.WriteLine(currentTask.task36("abxdddca", 'a'));
+               Console.WriteLine(currentTask.task36("xabjbhtrb", 'b'));*/
+            //task35
+            /*Console.WriteLine(currentTask.task35("abcdefgh", "abijsklm"));
+            Console.WriteLine(currentTask.task35("abcde", "osuefrcd"));
+            Console.WriteLine(currentTask.task35("pqrstuvwx", "pqkdiewx"));/
+            //task34
+            /*  Console.WriteLine(currentTask.task34(new[] { 1, 1, 2, 3, 1 }));
+              Console.WriteLine(currentTask.task34(new[] { 1, 1, 2, 4, 1 }));
+              Console.WriteLine(currentTask.task34(new[] { 1, 1, 2, 1, 2, 3 }));*/
+            //task33
+            /*Console.WriteLine(currentTask.task33(new[] { 1, 2, 9, 3 }, 3));
+            Console.WriteLine(currentTask.task33(new[] { 1, 2, 3, 4, 5, 6 }, 2));
+            Console.WriteLine(currentTask.task33(new[] { 1, 2, 2, 3 }, 9));*/
+
+            //task32
+            /*  Console.WriteLine(currentTask.task32(new[] { 1, 2, 9, 3 }, 3));
+              Console.WriteLine(currentTask.task32(new[] { 1, 2, 2, 3 }, 2));
+              Console.WriteLine(currentTask.task32(new[] { 1, 2, 2, 3 }, 9));*/
+
+            //task31
+            /*  Console.WriteLine(currentTask.task31("abcdsab"));
+              Console.WriteLine(currentTask.task31("abcdabab"));
+              Console.WriteLine(currentTask.task31("abcabdabab"));
+              Console.WriteLine(currentTask.task31("abcabd"));*/
+
+            //task30
+            /*  Console.WriteLine(currentTask.task30("abcd"));
+              Console.WriteLine(currentTask.task30("abc"));
+              Console.WriteLine(currentTask.task30("a"));*/
+            //task29
+            /*  Console.WriteLine(currentTask.task29("Python"));
+              Console.WriteLine(currentTask.task29("PHP"));
+              Console.WriteLine(currentTask.task29("JS"));/
+
+              //task28
+              /*    Console.WriteLine(currentTask.task28("caabb"));
+                  Console.WriteLine(currentTask.task28("babaaba"));
+                  Console.WriteLine(currentTask.task28("aaaaa"));*/
 
             //task27
             /*  Console.WriteLine(currentTask.task27("bbaaccaag"));
