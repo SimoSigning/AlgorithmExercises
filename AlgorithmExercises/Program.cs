@@ -7,11 +7,25 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //task43
+            Console.WriteLine(currentTask.task43(3));
+            Console.WriteLine(currentTask.task43(7));
+            Console.WriteLine(currentTask.task43(21));
+
+            //task42
+            /*    Console.WriteLine(currentTask.task42(13));
+                Console.WriteLine(currentTask.task42(14));
+                Console.WriteLine(currentTask.task42(27));
+                Console.WriteLine(currentTask.task42(41));*/
+            //task41
+            /*    Console.WriteLine(currentTask.task41(5, 4));
+                Console.WriteLine(currentTask.task41(4, 3));
+                Console.WriteLine(currentTask.task41(1, 4));*/
             //task40
-            Console.WriteLine(currentTask.task40(12, 17));
-            Console.WriteLine(currentTask.task40(2, 17));
-            Console.WriteLine(currentTask.task40(22, 17));
-            Console.WriteLine(currentTask.task40(20, 0));
+            /*   Console.WriteLine(currentTask.task40(12, 17));
+               Console.WriteLine(currentTask.task40(2, 17));
+               Console.WriteLine(currentTask.task40(22, 17));
+               Console.WriteLine(currentTask.task40(20, 0));*/
 
             //task39
             /*  Console.WriteLine(currentTask.task39(new[] { 1, 1, 2, 2, 1 }));

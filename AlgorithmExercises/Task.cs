@@ -6,9 +6,42 @@ namespace AlgorithmExercises
 {
     class Task
     {
-        //min løsning
+   /*     public bool task43(int a)
+        {
+            return a % 7 == 0  && a % 13 != 0 || a % 13 == 0 && a % 7 != 0;
+        }*/
+        public bool task42(int a)
+        {
+            // min løsning
+            if(a > 0)
+            {
+                if(a % 13 == 0 || a % 13 == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+            //w3resource løsning
+            // return n % 13 == 0 || n % 13 == 1;
+        }
+        public bool task41(int a, int b)
+        {
+            //min løsning
+            return a == 5 || b == 5 || a + b == 5 || Math.Abs(a - b) == 5;
+            //w3resource løsning
+            //return x == 5 || y == 5 || x + y == 5 || Math.Abs(x - y) == 5;
+        }
+
         public int task40(int a, int b)
         {
+        //min løsning
             int sum = a + b;
             if(sum >= 10 && sum <= 20)
             {
