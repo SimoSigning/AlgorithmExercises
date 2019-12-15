@@ -6,10 +6,250 @@ namespace AlgorithmExercises
 {
     class Task
     {
-   /*     public bool task43(int a)
+        /*start Task57 section*/
+        public int task57(int a, int b, int c)
         {
-            return a % 7 == 0  && a % 13 != 0 || a % 13 == 0 && a % 7 != 0;
-        }*/
+            return Task57SupportFunction(a) + Task57SupportFunction(b) + Task57SupportFunction(c);
+        }
+        private int Task57SupportFunction(int Number)
+        {
+            if(Number >= 10 && Number <= 20)
+            {
+                if(Number == 13 || Number == 17)
+                {
+                    return Number;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            else
+            {
+                return Number;
+            }
+        }
+        /*end task57 section*/
+        public int task56(int a, int b, int c)
+        {
+            if(a == 13)
+            {
+                return 0;
+            }
+            else if (b == 13)
+            {
+                return a;
+            }
+            else if(c == 13)
+            {
+                return a + b;
+            }
+            else
+            {
+                return a + b + c;
+            }
+            /*
+           if (x == 13) return 0;
+           if (y == 13) return x;
+           if (z == 13) return x + y;
+           return x + y + z;
+             */
+        }
+        public int task55(int a, int b, int c)
+        {
+            if(a == b)
+            {
+                return c;
+            }
+            else if(a == c)
+            {
+                return b;
+            }
+            else if(b == c)
+            {
+                return a;
+            }
+            else
+            {
+                return a + b + c;
+            }
+            /*
+            if (x == y && y == z) return 0;
+            if (x == y) return z;
+            if (x == z) return y;
+            if (y == z) return x;
+            return x + y + z;
+             */
+        }
+
+        public int task54(int a, int b)
+        {
+            string AStr = a.ToString();
+            string BStr = b.ToString();
+            string SumStr = (a + b).ToString();
+            if(AStr.Length == SumStr.Length)
+            {
+                return int.Parse(SumStr);
+            }
+            else
+            {
+                return a;
+            }
+        }
+        public bool task53(int a, int b)
+        {
+            if(a >= 10 && a < 100 && b >= 10 && b < 100)
+            {
+                if(a / 10 == b / 10 || a / 10 == b % 10 || b / 10 == a % 10 || a % 10 == b % 10)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public int task52(int a, int b)
+        {
+            if(a == b)
+            {
+                return 0;
+            }
+            else if(a > b && a % 7 == b % 7)
+            {
+                return b;
+            }
+            else if(b > a && a % 7 == b % 7)
+            {
+                return a;
+            }
+            else if(a > b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
+        }
+        public bool task51(int x, int y, int z)
+        {
+            if(Math.Abs(x - y) >= 20 || Math.Abs(x - z) >= 20 || Math.Abs(y - z) >= 20)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool task50(int x, int y, int z)
+        {
+            if(x % 10 == y % 10 || x % 10 == z % 10 || y % 10 == z % 10)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool task49(int x, int y, int z, bool tyr)
+        {
+            if(tyr == true)
+            {
+                if( y >= x && z >= y)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                if( y > x && z > y)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        public bool task48(int x, int y, int z)
+        {
+            if (y > x && z > y)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool task47(int a, int b, int c)
+        {
+            if(a + b == c || a + c == b || b + c == a)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public string task46(string a)
+        {
+            if(a.Substring(0,1) == "F" && a.Substring(a.Length-1, 1) == "B")
+            {
+                return "FizzBuzz";
+            }
+            else if(a.Substring(0,1) == "F")
+            {
+                return "Fizz";
+            }
+            else if(a.Substring(a.Length-1, 1) == "B")
+            {
+                return "Buzz";
+            }
+            else
+            {
+                return a;
+            }
+        }
+        public int task45(int a, int b)
+        {
+            if(a >= 10 && a <= 20 || b >= 10 && b <= 20)
+            {
+                return 18;
+            }
+            else
+            {
+                return a + b;
+            }
+        }
+        public bool task44(int a)
+        {
+            //min løsning
+            return a % 10 <= 2 || a % 10 >= 8;
+            //w3resource løsning
+           // return a % 10 <= 2 || a % 10 >= 8;
+        }
+        public bool task43(int a)
+        {
+            //min løsning
+            return a % 7 == 0  && a % 3 != 0 || a % 3 == 0 && a % 7 != 0;
+            //w3resource løsning
+            //return n % 3 == 0 ^ n % 7 == 0;
+        }
         public bool task42(int a)
         {
             // min løsning

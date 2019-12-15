@@ -7,16 +7,83 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
-            //task43
-            Console.WriteLine(currentTask.task43(3));
-            Console.WriteLine(currentTask.task43(7));
-            Console.WriteLine(currentTask.task43(21));
+            //57
+            Console.WriteLine(currentTask.task57(4, 5, 7));
+            Console.WriteLine(currentTask.task57(7, 4, 12));
+            Console.WriteLine(currentTask.task57(10, 13, 12));
+            Console.WriteLine(currentTask.task57(17, 12, 18));
 
-            //task42
-            /*    Console.WriteLine(currentTask.task42(13));
-                Console.WriteLine(currentTask.task42(14));
-                Console.WriteLine(currentTask.task42(27));
-                Console.WriteLine(currentTask.task42(41));*/
+            //56
+            /*  Console.WriteLine(currentTask.task56(4, 5, 7));
+              Console.WriteLine(currentTask.task56(7, 4, 12));
+              Console.WriteLine(currentTask.task56(10, 13, 12));
+              Console.WriteLine(currentTask.task56(13, 12, 18));*/
+            //55
+            /* Console.WriteLine(currentTask.task55(4, 5, 7));
+             Console.WriteLine(currentTask.task55(7, 4, 12));
+             Console.WriteLine(currentTask.task55(10, 10, 12));
+             Console.WriteLine(currentTask.task55(12, 12, 18));*/
+
+            //54
+            /*   Console.WriteLine(currentTask.task54(4, 5));
+               Console.WriteLine(currentTask.task54(7, 4));
+               Console.WriteLine(currentTask.task54(10, 10));*/
+
+            //53
+            /*
+             Console.WriteLine(currentTask.task53(11, 21));
+             Console.WriteLine(currentTask.task53(11, 20));
+             Console.WriteLine(currentTask.task53(10, 10));/
+             //52
+             /*    Console.WriteLine(currentTask.task52(11, 21));
+                 Console.WriteLine(currentTask.task52(11, 20));
+                 Console.WriteLine(currentTask.task52(10, 10));*/
+            //51
+            /*  Console.WriteLine(currentTask.task51(11, 21, 31));
+              Console.WriteLine(currentTask.task51(11, 22, 31));
+              Console.WriteLine(currentTask.task51(10, 20, 15));*/
+            //50
+            /* Console.WriteLine(currentTask.task50(11, 21, 31));
+             Console.WriteLine(currentTask.task50(11, 22, 31));
+             Console.WriteLine(currentTask.task50(11, 22, 33));*/
+            //49
+            /*  Console.WriteLine(currentTask.task49(1, 2, 3, false));
+              Console.WriteLine(currentTask.task49(1, 2, 3, true));
+              Console.WriteLine(currentTask.task49(10, 2, 30, false));
+              Console.WriteLine(currentTask.task49(10, 10, 30, true));*/
+            //48
+            /*   Console.WriteLine(currentTask.task48(1, 2, 3));
+               Console.WriteLine(currentTask.task48(4, 5, 6));
+               Console.WriteLine(currentTask.task48(-1, 1, 0));*/
+            //47
+            /* Console.WriteLine(currentTask.task47(1, 2, 3));
+             Console.WriteLine(currentTask.task47(4, 5, 6));
+             Console.WriteLine(currentTask.task47(-1, 1, 0));*/
+            //46
+            /* Console.WriteLine(currentTask.task46("Founder"));
+             Console.WriteLine(currentTask.task46("founder"));
+             Console.WriteLine(currentTask.task46("club"));
+             Console.WriteLine(currentTask.task46("forb"));*/
+            //45
+            /* Console.WriteLine(currentTask.task45(3, 7));
+             Console.WriteLine(currentTask.task45(10, 11));
+             Console.WriteLine(currentTask.task45(10, 20));
+             Console.WriteLine(currentTask.task45(21, 220));*/
+            //task44
+            /*   Console.WriteLine(currentTask.task44(3));
+               Console.WriteLine(currentTask.task44(7));
+               Console.WriteLine(currentTask.task44(8));
+               Console.WriteLine(currentTask.task44(21));*/
+            //task43
+            /* Console.WriteLine(currentTask.task43(3));
+             Console.WriteLine(currentTask.task43(7));
+             Console.WriteLine(currentTask.task43(21));/
+
+             //task42
+             /*    Console.WriteLine(currentTask.task42(13));
+                 Console.WriteLine(currentTask.task42(14));
+                 Console.WriteLine(currentTask.task42(27));
+                 Console.WriteLine(currentTask.task42(41));*/
             //task41
             /*    Console.WriteLine(currentTask.task41(5, 4));
                 Console.WriteLine(currentTask.task41(4, 3));
