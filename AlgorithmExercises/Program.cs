@@ -7,11 +7,86 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //76
+            Console.WriteLine(currentTask.task76("Hello"));
+            Console.WriteLine(currentTask.task76("Python"));
+            Console.WriteLine(currentTask.task76("a"));
+            Console.WriteLine(currentTask.task76(""));
+            //75
+            /*    Console.WriteLine(currentTask.task75("Hello"));
+                Console.WriteLine(currentTask.task75("Python"));
+                Console.WriteLine(currentTask.task75("abc"));*/
+            //74
+            /* Console.WriteLine(currentTask.task74("Hello", 1));
+             Console.WriteLine(currentTask.task74("Python", 2));
+             Console.WriteLine(currentTask.task74("on", 1));*/
+            //73
+            /*  Console.WriteLine(currentTask.task73("Hello", 1));
+              Console.WriteLine(currentTask.task73("Python", 2));
+              Console.WriteLine(currentTask.task73("on", 1));
+              Console.WriteLine(currentTask.task73("o", 1));*/
+            //72
+            /*    Console.WriteLine(currentTask.task72("Hello"));
+                Console.WriteLine(currentTask.task72("Python"));
+                Console.WriteLine(currentTask.task72("on"));
+                Console.WriteLine(currentTask.task72("o"));*/
+            //71
+            /* Console.WriteLine(currentTask.task71("Hell"));
+             Console.WriteLine(currentTask.task71("JS"));*/
+            //70
+            /* Console.WriteLine(currentTask.task70("Hello"));
+             Console.WriteLine(currentTask.task70("JS"));
+             Console.WriteLine(currentTask.task70(""));*/
+
+            //69
+            /*   Console.WriteLine(currentTask.task69("Hello"));
+               Console.WriteLine(currentTask.task69("JS"));*/
+            //68
+            /*   Console.WriteLine(currentTask.task68("Hello"));
+               Console.WriteLine(currentTask.task68("JS"));*/
+
+            //67
+            /* Console.WriteLine(currentTask.task67("Hello", "Hi"));
+             Console.WriteLine(currentTask.task67("JS", "Python"));*/
+            //66
+            /* Console.WriteLine(currentTask.task66("Hello", "Hi"));
+             Console.WriteLine(currentTask.task66("JS", "Python"));*/
+            //65
+            /* Console.WriteLine(currentTask.task65("Hello"));
+             Console.WriteLine(currentTask.task65("Hi"));
+             Console.WriteLine(currentTask.task65("Python"));*/
+            //64
+            /* Console.WriteLine(currentTask.task64("Hello"));
+             Console.WriteLine(currentTask.task64("Hi"));*/
+            //63
+            /*  Console.WriteLine(currentTask.task63("Hello"));
+              Console.WriteLine(currentTask.task63("Hi"));
+              Console.WriteLine(currentTask.task63("H"));
+              Console.WriteLine(currentTask.task63(" "));*/
+            //62
+            /*Console.WriteLine(currentTask.task62("Hello"));
+            Console.WriteLine(currentTask.task62("Hi"));*/
+            //61
+            /*  Console.WriteLine(currentTask.task61("[[]]", "Hello"));
+              Console.WriteLine(currentTask.task61("(())", "Hi"));*/
+            //60
+            /*   Console.WriteLine(currentTask.task60("Hi", "Hello"));
+               Console.WriteLine(currentTask.task60("whats", "app"));*/
+            //59
+            /*  Console.WriteLine(currentTask.task59(4, 5, 6));
+              Console.WriteLine(currentTask.task59(7, 12, 13));
+              Console.WriteLine(currentTask.task59(-1, 0, 1));*/
+            //58
+            /*   Console.WriteLine(currentTask.task58(4, 5));
+               Console.WriteLine(currentTask.task58(7, 12));
+               Console.WriteLine(currentTask.task58(10, 13));
+               Console.WriteLine(currentTask.task58(17, 33));
+               Console.WriteLine(currentTask.task58(17, 33));*/
             //57
-            Console.WriteLine(currentTask.task57(4, 5, 7));
-            Console.WriteLine(currentTask.task57(7, 4, 12));
-            Console.WriteLine(currentTask.task57(10, 13, 12));
-            Console.WriteLine(currentTask.task57(17, 12, 18));
+            /* Console.WriteLine(currentTask.task57(4, 5, 7));
+             Console.WriteLine(currentTask.task57(7, 4, 12));
+             Console.WriteLine(currentTask.task57(10, 13, 12));
+             Console.WriteLine(currentTask.task57(17, 12, 18));*/
 
             //56
             /*  Console.WriteLine(currentTask.task56(4, 5, 7));

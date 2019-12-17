@@ -6,6 +6,203 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public string task76(string a)
+        {
+            string hmm = string.Empty;
+            if (a.Length < 1)
+            {
+                return "#";
+            }
+            else if (a.Length < 2)
+            {
+                return a.Substring(0, 1) + "#";
+            }
+            else
+            {
+                return a.Substring(0, 2);
+            }
+        }
+        public string task75(string a)
+        {
+            if(a.Length >= 3)
+            {
+                return a.Substring((a.Length / 2) - 1, 3);
+            }
+            else
+            {
+                return a;
+            }
+        }
+        public string task74(string a, int index)
+        {
+            if (a.Length >= 2 && index <= a.Length - 2)
+            {
+                return a.Substring(index, 2);
+            }
+            else
+            {
+                return a.Substring(0, 2);
+            }
+        }
+        public string task73(string a, int cutlength)
+        {
+            if(a.Length >= cutlength)
+            {
+                return a.Substring(0, cutlength) + a.Substring(a.Length - cutlength, cutlength);
+            }
+            else
+            {
+                return "strengen skal have en længde der er mindst lig antallet der skal skæres af";
+            }
+        }
+        public bool task72(string a)
+        {
+            return a.EndsWith("on");
+        }
+        public string task71(string a)
+        {
+            if(a.Length >= 2)
+            {
+                return a.Substring((a.Length / 2) - 1, 2);
+            }
+            else
+            {
+                return "String must atleast have a length of 2";
+            }
+        }
+        public string task70(string a)
+        {
+            if(a.Length >= 2)
+            {
+                string first = a.Remove(a.Length - 1, 1);
+                string second = first.Remove(0, 1);
+                return second;
+            }
+            else
+            {
+                return "";
+            }
+
+        }
+        public string task69(string a)
+        {
+            if(a.Length >= 2)
+            {
+                return a.Substring(a.Length - 2, 2) + a.Substring(0, a.Length - 2);
+            }
+            else
+            {
+                return "String must atleast have a length of 2";
+            }
+        }
+        public string task68(string a)
+        {
+            if(a.Length >= 2)
+            {
+                return a.Substring(2, a.Length - 2) + a.Substring(0, 2);
+            }
+            else
+            {
+                return "String must atleast have a length of 2";
+            }
+        }
+        public string task67(string a, string b)
+        {
+            if(a.Length >= 1 && b.Length >= 1)
+            {
+                string NewString = a.Substring(1, a.Length - 1) + b.Substring(1, b.Length - 1);
+                return NewString;
+            }
+            else
+            {
+                return "String must atleast have a length of 1";
+            }
+        }
+        public string task66(string a, string b)
+        {
+            if(a.Length > b.Length)
+            {
+                return a + b + a;
+            }
+            else
+            {
+                return b + a + b;
+            }
+        }
+        public string task65(string a)
+        {
+            return a.Substring(1, a.Length - 2);
+        }
+        public string task64(string a)
+        {
+                return a.Substring(0, a.Length / 2);
+        }
+        public string task63(string a)
+        {
+            if(a.Length < 2)
+            {
+                return a;
+            }
+            else
+            {
+                return a.Substring(0, 2);
+            }
+        }
+        public string task62(string a)
+        {
+            if(a.Length >= 2)
+            {
+                return a.Substring(a.Length - 2, 2) + a.Substring(a.Length - 2, 2) + a.Substring(a.Length - 2, 2);
+            }
+            else
+            {
+                return "Length should be atleast two";
+            }
+        }
+        public string task61(string container, string inserter)
+        {
+            if(container.Length == 4)
+            {
+                return container.Substring(0, 2) + inserter + container.Substring(2, 2);
+            }
+            else
+            {
+                return "Error";
+            }
+        }
+        public string task60(string a, string b)
+        {
+            return a + b + b + a;
+        }
+        public bool task59(int s, int m, int l)
+        {
+            return Math.Abs(m - s) == Math.Abs(l - m);
+        }
+        public int task58(int a, int b)
+        {
+            if(a <= 13 && b <= 13)
+            {
+                if(Math.Abs(13 - a) < Math.Abs(13 - b))
+                {
+                    return a;
+                }               
+                else
+                {
+                    return b;
+                }
+            }
+            else 
+            {
+                return 0;
+            }
+            /*
+            if (x > 13 && y > 13) return 0;
+            if (x <= 13 && y > 13) return x;
+            if (y <= 13 && x > 13) return y;
+            return x > y ? x : y;
+             */
+        }
+
         /*start Task57 section*/
         public int task57(int a, int b, int c)
         {
