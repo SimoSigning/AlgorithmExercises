@@ -6,6 +6,64 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public bool task90(int[] a, int[] b)
+        {
+            if(a.Length > 0 && b.Length > 0)
+            {
+                if(a[0] == b[0] || a[a.Length -1] == b[b.Length-1])
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool task89(int[] a)
+        {
+            return a.Length >= 1 && a[0] == a[a.Length - 1];
+        }
+        public bool task88(int[] a)
+        {
+            return a[0] == 10 || a[a.Length - 1] == 10;
+        }
+        public string task87(string a)
+        {
+            if(a.Substring(0,1) == "a")
+            {
+                a = a.Remove(0, 1);
+            }
+
+            if(a.Substring(0,1) == "a")
+            {
+                a = a.Remove(0, 1);
+            }
+            return a;
+        }
+        public string task86(string a)
+        {
+            if(a.Substring(0,1) == "a" && a.Substring(a.Length-1, 1) == "a")
+            {
+                return a.Substring(1, a.Length - 2);
+            }
+            else if(a.Substring(0, 1) == "a")
+            {
+                return a.Substring(1, a.Length - 1);
+            }
+            else if(a.Substring(a.Length -1, 1) == "a")
+            {
+                return a.Substring(0, a.Length - 1);
+            }
+            else
+            {
+                return a;
+            }
+        }
         public string task85(string a)
         {
             if(a.Substring(0,1) == "p" && a.Substring(1,1) == "y")

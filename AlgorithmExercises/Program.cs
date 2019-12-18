@@ -7,12 +7,34 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //90
+            Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 10, 20, 40, 50 }));
+            Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 10, 20, 40, 5 }));
+            Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 1, 20, 40, 5 }));
+            //89
+            /*     Console.WriteLine(currentTask.task89(new[] { 10, 20, 40, 50 }));
+                 Console.WriteLine(currentTask.task89(new[] { 10, 20, 40, 10 }));
+                 Console.WriteLine(currentTask.task89(new[] { 12, 24, 35, 55 }));*/
+            //88
+            /*    Console.WriteLine(currentTask.task88(new[] { 10, 20, 40, 50 }));
+                Console.WriteLine(currentTask.task88(new[] { 5, 20, 40, 10 }));
+                Console.WriteLine(currentTask.task88(new[] { 10, 20, 40, 10 }));
+                Console.WriteLine(currentTask.task88(new[] { 12, 24, 35, 55 }));*/
+            //87
+            /*   Console.WriteLine(currentTask.task87("abcab"));
+               Console.WriteLine(currentTask.task87("python"));
+               Console.WriteLine(currentTask.task87("aacda"));
+               Console.WriteLine(currentTask.task87("jython"));*/
+            //86
+            /* Console.WriteLine(currentTask.task86("abcab"));
+             Console.WriteLine(currentTask.task86("python"));
+             Console.WriteLine(currentTask.task86("abcda"));
+             Console.WriteLine(currentTask.task86("jython"));*/
             //85
-            Console.WriteLine(currentTask.task85("abcab"));
-            Console.WriteLine(currentTask.task85("python"));
-            Console.WriteLine(currentTask.task85("press"));
-            Console.WriteLine(currentTask.task85("jython"));
-
+            /*     Console.WriteLine(currentTask.task85("abcab"));
+                 Console.WriteLine(currentTask.task85("python"));
+                 Console.WriteLine(currentTask.task85("press"));
+                 Console.WriteLine(currentTask.task85("jython"));*/
             //84
             /*  Console.WriteLine(currentTask.task84("abcab"));
               Console.WriteLine(currentTask.task84("Python"));*/
