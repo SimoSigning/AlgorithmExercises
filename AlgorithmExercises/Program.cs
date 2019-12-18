@@ -7,11 +7,54 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //85
+            Console.WriteLine(currentTask.task85("abcab"));
+            Console.WriteLine(currentTask.task85("python"));
+            Console.WriteLine(currentTask.task85("press"));
+            Console.WriteLine(currentTask.task85("jython"));
+
+            //84
+            /*  Console.WriteLine(currentTask.task84("abcab"));
+              Console.WriteLine(currentTask.task84("Python"));*/
+            //83
+            /*Console.WriteLine(currentTask.task83("abc"));
+            Console.WriteLine(currentTask.task83("Python"));
+            Console.WriteLine(currentTask.task83("J"));*/
+            //82
+            /*  Console.WriteLine(currentTask.task82("abc", "abcd"));
+              Console.WriteLine(currentTask.task82("Python", "Python"));
+              Console.WriteLine(currentTask.task82("JS", "Python"));*/
+            //81
+            /*  Console.WriteLine(currentTask.task81("abab"));
+              Console.WriteLine(currentTask.task81("abcdef"));
+              Console.WriteLine(currentTask.task81("xyzsderxy"));*/
+            //80
+            /* Console.WriteLine(currentTask.task80("abc"));
+             Console.WriteLine(currentTask.task80("abcdef"));
+             Console.WriteLine(currentTask.task80("C"));
+             Console.WriteLine(currentTask.task80("xyz"));
+             Console.WriteLine(currentTask.task80("xyzsder"));*/
+            //79
+            /*   Console.WriteLine(currentTask.task79("Hello"));
+               Console.WriteLine(currentTask.task79("Python"));
+               Console.WriteLine(currentTask.task79("PHP"));
+               Console.WriteLine(currentTask.task79("JS"));
+               Console.WriteLine(currentTask.task79("C"));*/
+
+            //78
+            /*  Console.WriteLine(currentTask.task78("abc", "cat"));
+              Console.WriteLine(currentTask.task78("python", "php"));
+              Console.WriteLine(currentTask.task78("php", "php"));*/
+            //77
+            /* Console.WriteLine(currentTask.task77("Hello", "Hi"));
+             Console.WriteLine(currentTask.task77("Python", "PHP"));
+             Console.WriteLine(currentTask.task77("JS", "JS"));
+             Console.WriteLine(currentTask.task77("Csharp", ""));*/
             //76
-            Console.WriteLine(currentTask.task76("Hello"));
-            Console.WriteLine(currentTask.task76("Python"));
-            Console.WriteLine(currentTask.task76("a"));
-            Console.WriteLine(currentTask.task76(""));
+            /*  Console.WriteLine(currentTask.task76("Hello"));
+              Console.WriteLine(currentTask.task76("Python"));
+              Console.WriteLine(currentTask.task76("a"));
+              Console.WriteLine(currentTask.task76(""));*/
             //75
             /*    Console.WriteLine(currentTask.task75("Hello"));
                 Console.WriteLine(currentTask.task75("Python"));

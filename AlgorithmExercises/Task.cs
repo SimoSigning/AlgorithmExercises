@@ -6,12 +6,143 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public string task85(string a)
+        {
+            if(a.Substring(0,1) == "p" && a.Substring(1,1) == "y")
+            {
+                return a;
+            }
+            else if(a.Substring(0,1) == "p")
+            {
+                return a.Substring(0, 1) + a.Substring(2, a.Length - 2);
+            }
+            else if(a.Substring(1,1) == "y")
+            {
+                return a.Substring(1, 1) + a.Substring(2, a.Length - 2);
+            }
+            else
+            {
+                return a.Substring(2, a.Length - 2);
+            }
+        }
+        public string task84(string a)
+        {
+            if(a.Substring(0,2) == a.Substring(a.Length-2, 2))
+            {
+                return a.Substring(2, a.Length -2);
+            }
+            else
+            {
+                return a;
+            }
+        }
+        public string task83(string a)
+        {
+            string Returner = string.Empty;
+            if(a.Length < 2)
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    Returner += a;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    Returner += a.Substring(0, 2);
+                }
+            }
+            return Returner;
+        }
+        public string task82(string a, string b)
+        {
+            if(a.Length < b.Length)
+            {
+                return a + b.Substring(b.Length - a.Length, b.Length - (b.Length - a.Length));
+            }
+            else if(a.Length > b.Length)
+            {
+                return a.Substring(a.Length - b.Length, a.Length - (a.Length - b.Length)) + b;
+            }
+            else
+            {
+                return a + b;
+            }
+        }
+        public bool task81(string a)
+        {
+            return a.Substring(0, 2) == a.Substring(a.Length - 2, 2);
+        }
+        public string task80(string a)
+        {
+            if(a.StartsWith("abc"))
+            {
+                return "abc";
+            }
+            else if(a.StartsWith("xyz"))
+            {
+                return "xyz";
+            }
+            else
+            {
+                return string.Empty;
+            }
+        }
+        public string task79(string a)
+        {
+            if(a.Length > 1)
+            {
+                return a.Substring(0, a.Length - 2) + a.Substring(a.Length - 1, 1) + a.Substring(a.Length - 2, 1);
+            }
+            else
+            {
+                return a;
+            }
+            
+        }
+
+        public string task78(string a, string b)
+        {
+            string ab = a + b;
+            for (int i = 0; i < ab.Length-1; i++)
+            {
+                if(ab[i] == ab[i+1])
+                {
+                    ab = ab.Remove(i, 1);
+                }
+            }
+            return ab;
+        }
+
+
+        //task77 section
+        public string task77(string a, string b)
+        {
+            return task77supportfunction(a, "first") + task77supportfunction(b, "last");
+        }
+        private string task77supportfunction(string a, string section)
+        {
+            if(a.Length == 0)
+            {
+                return "#";
+            }
+            else if(section == "first")
+            {
+                return a.Substring(0, 1);
+            }
+            else
+            {
+                return a.Substring(a.Length - 1, 1);
+            }
+        }
+        //end task77 section
         public string task76(string a)
         {
             string hmm = string.Empty;
             if (a.Length < 1)
             {
-                return "#";
+                return "##";
             }
             else if (a.Length < 2)
             {
