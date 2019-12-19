@@ -7,10 +7,46 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //104
+            currentTask.task104(new[] { 10, 20, 30 }, new[] { 40, 50, 60 });
+            //103
+          //  currentTask.task103(new[] { 1, 5, 7, 9, 11, 13 });
+            //102
+          //  currentTask.task102(new[] { 10, 20, -30 }, new[] { 10, 20, 30 });
+            //101
+           // currentTask.task101(new[] { 1, 5, 7, 5, 4, 1, 2, 5, 7});
+            //100
+          /*  Console.WriteLine(currentTask.task100(new[] { 12, 20 }));
+            Console.WriteLine(currentTask.task100(new[] { 20, 20 }));
+            Console.WriteLine(currentTask.task100(new[] { 10, 10 }));
+            Console.WriteLine(currentTask.task100(new[] { 10 }));*/
+            //99
+            // currentTask.task99(new[] { 10, 20, -30, -40, 30 });
+            //98
+            /* Console.WriteLine(currentTask.task98(new[] { 12, 20 }));
+             Console.WriteLine(currentTask.task98(new[] { 14, 15 }));
+             Console.WriteLine(currentTask.task98(new[] { 11, 21 }));*/
+            //97
+            /*  Console.WriteLine(currentTask.task97(new[] { 12, 20 }));
+              Console.WriteLine(currentTask.task97(new[] { 14, 15 }));
+              Console.WriteLine(currentTask.task97(new[] { 11, 21 }));*/
+            //96
+            //    currentTask.task96(new[] { 10, 20, -30, -40, 30 });
+            //95
+            // currentTask.task95(new[] { 10, 20, -30, -40, 30 }, new[] { 10, 20, 30, 40, 30 });
+            //94
+            //  currentTask.task94(new[] { 10, 20, -30, -40 });
+            //93
+            // currentTask.task93(new[] { 10, 20, -30, -40, 50 });
+            //92
+            // currentTask.task92(new[] { 10, 20, -30, -40 });
+            //91
+            /* Console.WriteLine(currentTask.task91(new[] { 10, 20, 30, 40, 50 }));
+             Console.WriteLine(currentTask.task91(new[] { 10, 20, -30, -40, 50 }));*/
             //90
-            Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 10, 20, 40, 50 }));
-            Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 10, 20, 40, 5 }));
-            Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 1, 20, 40, 5 }));
+            /* Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 10, 20, 40, 50 }));
+             Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 10, 20, 40, 5 }));
+             Console.WriteLine(currentTask.task90(new[] { 10, 20, 40, 50 }, new[] { 1, 20, 40, 5 }));*/
             //89
             /*     Console.WriteLine(currentTask.task89(new[] { 10, 20, 40, 50 }));
                  Console.WriteLine(currentTask.task89(new[] { 10, 20, 40, 10 }));

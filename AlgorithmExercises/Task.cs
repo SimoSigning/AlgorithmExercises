@@ -6,6 +6,247 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public void task104(int[] a, int[] b)
+        {
+            int NewLength = a.Length + b.Length;
+            int[] newArray = new int[NewLength];
+            for (int i = 0; i < NewLength; i++)
+            {
+                if(i < a.Length)
+                {
+                    newArray[i] = a[i];
+                }
+                else
+                {
+                    newArray[i] = b[i - a.Length];
+                }
+            }
+            for (int i = 0; i < NewLength; i++)
+            {
+                Console.Write(newArray[i]);
+                Console.Write(" ");
+            }
+        }
+        public void task103(int[] a)
+        {
+            int[] NewArray = new int[2];
+            NewArray[0] = a[(a.Length / 2) - 1];
+            NewArray[1] = a[(a.Length / 2)];
+            for (int i = 0; i < NewArray.Length; i++)
+            {
+                Console.WriteLine(NewArray[i]);
+            }
+        }
+        public void task102(int[] a, int[] b)
+        {
+            int sum01 = 0;
+            int sum02 = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                sum01 += a[i];
+            }
+            for (int i = 0; i < b.Length; i++)
+            {
+                sum02 += b[i];
+            }
+            if(sum01 >= sum02)
+            {
+                Console.WriteLine("Larger array");
+                for (int i = 0; i < a.Length; i++)
+                {
+                    Console.Write(a[i]);
+                    Console.Write(" ");
+                }
+                Console.WriteLine("Original array");
+                for (int i = 0; i < b.Length; i++)
+                {
+                    Console.Write(b[i]);
+                    Console.Write(" ");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Larger array");
+                for (int i = 0; i < b.Length; i++)
+                {
+                    Console.Write(b[i]);
+                    Console.Write(" ");
+                }
+                Console.Write('\n');
+                Console.WriteLine("Smaller array");
+                for (int i = 0; i < a.Length; i++)
+                {
+                    Console.Write(a[i]);
+                    Console.Write(" ");
+                }
+            }
+        }
+        public void task101(int[] a)
+        {
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if(a[i] == 5 && a[i+1] == 7)
+                {
+                    a[i + 1] = 1;
+                }
+            }
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write(a[i]);
+                Console.Write(" ");
+            }
+        }
+        public bool task100(int[] a)
+        {
+            int TenCounter = 0;
+            int TwentyCounter = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 10)
+                {
+                    TenCounter++;
+                }
+
+                if(a[i] == 20)
+                {
+                    TwentyCounter++;
+                }
+            }
+            return TenCounter == 2 || TwentyCounter == 2;
+        }
+        public void task99(int[] a)
+        {
+            int ALength = a.Length;
+            int NewLength = ALength * 2;
+            int[] NewArr = new int[NewLength];
+            for (int i = 0; i < NewArr.Length; i++)
+            {
+                if(i == 0)
+                {
+                    NewArr[i] = a[i];
+                }
+                else
+                {
+                    NewArr[i] = 0;
+                }
+            }
+            for (int i = 0; i < NewLength; i++)
+            {
+                Console.Write(NewArr[i]);
+                Console.Write(" ");
+            }
+        }
+
+        public bool task98(int[] a)
+        {
+            bool Returner = true;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] == 15 || a[i] == 20)
+                {
+                    Returner = false;
+                    break;
+                }
+            }
+            return Returner;
+        }
+        public bool task97(int[] a)
+        {
+            bool Returner = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 15 || a[i] == 20)
+                {
+                    Returner = true;
+                    break;
+                }
+            }
+            return Returner;
+        }
+        public void task96(int[] a)
+        {
+            int[] newArr = new int[2];
+            newArr[0] = a[0];
+            newArr[1] = a[a.Length - 1];
+            for (int i = 0; i < newArr.Length; i++)
+            {
+                Console.Write(newArr[i]);
+            }
+        }
+        public void task95(int[] a, int[] b)
+        {
+            int[] derpArray = new int[2];
+            if(a.Length == 5 && a.Length == b.Length)
+            {
+                derpArray[0] = a[a.Length / 2];
+                derpArray[1] = b[a.Length / 2];
+            }
+            for (int i = 0; i < derpArray.Length; i++)
+            {
+                Console.WriteLine(derpArray[i]);
+            }
+        }
+        public void task94(int[] a)
+        {
+            int UdgangsPunkt = a[0];
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] > UdgangsPunkt)
+                {
+                    UdgangsPunkt = a[i];
+                }
+            }
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = UdgangsPunkt;
+            }
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+        }
+        public void task93(int[] a)
+        {
+            int[] newArr = new int[a.Length];
+            for (int i = 0; i < a.Length; i++)
+            {
+                newArr[i] = a[a.Length - 1 - i];
+            }
+            for (int i = 0; i < newArr.Length; i++)
+            {
+                Console.WriteLine(newArr[i]);
+            }
+        }
+        public void task92(int[] a)
+        {
+            int[] newArr = new int[a.Length];
+            for (int i = 1; i < a.Length; i++)
+            {
+                newArr[i - 1] = a[i];
+                /*
+                 i = 1 --> newArr[0] = a[1] dvs 10 --> 20
+                 i = 2 --> newArr[1] = a[2] dvs 20 --> -30
+                 i = 3 --> newArr[2] = a[3] dvs -30 --> -40
+                 a.length er 4, og i skal være mindre end 4. dvs stop af loop.
+                 sidste index skal have første index
+                 newArr[3] = a[0] dvs -40 --> 10.
+                 */
+            }
+            newArr[a.Length - 1] = a[0];
+            for (int i = 0; i < newArr.Length; i++)
+            {
+                Console.WriteLine(newArr[i]);
+            }
+        }
+        public int task91(int[] a)
+        {
+            int summarizer = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                summarizer += a[i];
+            }
+            return summarizer;
+        }       
         public bool task90(int[] a, int[] b)
         {
             if(a.Length > 0 && b.Length > 0)
