@@ -6,6 +6,113 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public int task110(int[] a)
+        {
+            int MinUdgangspunkt = a[0];
+            int MaxUdgangspunkt = a[0];
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] < MinUdgangspunkt)
+                {
+                    MinUdgangspunkt = a[i];
+                }
+            }
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] > MaxUdgangspunkt)
+                {
+                    MaxUdgangspunkt = a[i];
+                }
+            }
+            int Diff = Math.Abs(MaxUdgangspunkt - MinUdgangspunkt);
+            return Diff;
+        }
+        public int task109(int[] a)
+        {
+            int counter = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] % 2 == 0)
+                {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+        public void task108(int[] a)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                Console.Write(a[i]);
+                Console.Write(" ");
+            }
+        }
+        public int task107(int[] a)
+        {
+            if(a.Length == 1)
+            {
+                return a[0];
+            }
+            else if(a.Length == 2)
+            {
+                if(a[0] > a[1])
+                {
+                    return a[0];
+                }
+                else
+                {
+                    return a[1];
+                }
+            }
+            else
+            {
+                int[] derp = new int[3];
+                derp[0] = a[0];
+                derp[1] = a[(a.Length-1)/2];
+                derp[2] = a[a.Length-1];
+                int udgangspunkt = derp[0];
+                for (int i = 0; i < derp.Length; i++)
+                {
+                    if(derp[i] > udgangspunkt)
+                    {
+                        udgangspunkt = derp[i];
+                    }
+                }
+                return udgangspunkt;
+            }
+        }
+        public void task106(int[] a)
+        {
+            /*
+            Original array: 1, 5, 7, 9, 11, 13
+            New array: 7 9 11
+             */
+            int[] NewArr = new int[3];
+            for (int i = 0; i < NewArr.Length; i++)
+            {
+                NewArr[i] = a[((a.Length - 1) / 2) + i]; //dvs den burde starte fra 2. hvilket den også gør i eksempel
+            }
+            for (int i = 0; i < NewArr.Length; i++)
+            {
+                Console.Write(NewArr[i]);
+                Console.Write(" ");
+            }
+        }
+        public void task105(int[] a)
+        {
+            int[] NewArr = new int[a.Length];
+            NewArr[0] = a[a.Length - 1];
+            NewArr[a.Length - 1] = a[0];
+            for (int i = 1; i < NewArr.Length - 1; i++)
+            {
+                NewArr[i] = a[i];
+            }
+            for (int i = 0; i < NewArr.Length; i++)
+            {
+                Console.Write(NewArr[i]);
+                Console.Write(" ");
+            }
+        }
         public void task104(int[] a, int[] b)
         {
             int NewLength = a.Length + b.Length;
