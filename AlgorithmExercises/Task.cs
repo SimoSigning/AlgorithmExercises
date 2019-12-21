@@ -6,6 +6,419 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public void task130(int[] a)
+        {
+            /*1, 2, 0, 3, 5, 7, 0, 9, 11*/
+            int indexcounter = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 0)
+                {
+                    a[i] = a[indexcounter];
+                    a[indexcounter] = 0;
+                    indexcounter++;
+                }
+            }
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+        }
+        public void task129(int[] a)
+        {
+            int start = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 5)
+                {
+                    start = i+1;
+                }
+            }
+            for (int i = start; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+        }
+        public void task128(int[] a)
+        {
+            int size = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 5)
+                {
+                    size = i;
+                }
+            }
+            for (int i = 0; i < size; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+          /*  for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 5)
+                {
+                    int[] ValuesBeforeFive = new int[i];
+                    for (int j = 0; j < i; j++)
+                    {
+                        ValuesBeforeFive[j] = a[j];
+                    }
+                    for (int j = 0; j < ValuesBeforeFive.Length; j++)
+                    {
+                        Console.WriteLine(ValuesBeforeFive[j]);
+                    }
+                    break;
+                }
+            }*/
+            Console.WriteLine("derp");
+        }
+        public void task127(int[] a)
+        {
+            /*10, 20, -30, -40, 50 
+             20 -30 -40 50 10
+             */
+            int[] NewArr = new int[a.Length];
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                NewArr[i] = a[i + 1];
+                if(i == a.Length-2)
+                {
+                    NewArr[i + 1] = a[0];
+                }
+            }
+            for (int i = 0; i < NewArr.Length; i++)
+            {
+                Console.WriteLine(NewArr[i]);
+            }
+        }
+        public bool task126(int[] a)
+        {
+            bool returner = false;
+            for (int i = 0; i < a.Length-2; i++)
+            {
+                if(a[i] < a[i+1] && a[i+1] < a[i+2])
+                {
+                    returner = true;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public bool task125(int[] a, int spec)
+        {
+            /*
+              3, 7, 5, 5, 3, 7 }, 2
+             */
+            bool returner = true;
+            for (int i = 0; i < spec; i++)
+            {
+                if (a[i] != a[a.Length - spec + i])
+                {
+                    returner = false;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public bool task124(int[] a)
+        {
+            //3, 5, 5, 3, 7
+            bool derp = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 5)
+                {
+                    if(i > 0 && a[i-1] == 5 || i < a.Length-1 && a[i+1] == 5)
+                    {
+                        derp = true;
+                    }
+                    else
+                    {
+                        derp = false;
+                        break;
+                    }
+                }
+            }
+
+       /*     bool HasFoundCouple = false;
+            bool returner = true;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if(a[i] == 5 && a[i+1] == 5)
+                {
+                    HasFoundCouple = true;
+                }
+
+                if(a[i] == 5 && a[i+1] != 5)
+                {
+                    if(HasFoundCouple == true)
+                    {
+                        HasFoundCouple = false;
+                    }
+                    else
+                    {
+                        returner = false;
+                        break;
+                    }
+                }
+
+                if(i == a.Length - 2)
+                {
+                    if(a[i] != 5 && a[i+1] == 5)
+                    {
+                        returner = false;
+                        break;
+                    }
+                }
+            }*/
+            return derp;
+        }
+        public bool task123(int[] a)
+        {
+            int FiveCounter = 0;
+            bool returner = false;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if(a[i] == 5 && a[i+1] != 5)
+                {
+                    FiveCounter++;
+                    returner = true;
+                }
+                else if (a[i] == 5 && a[i+1] == 5)
+                {
+                    returner = false;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public bool task122(int[] a)
+        {
+            bool returner = false;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if(a[i] % 2 == 0 && a[i+1] % 2 == 0 || a[i] % 2 != 0 && a[i+1] % 2 != 0)
+                {
+                    returner = true;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public bool task121(int[] a)
+        {
+            bool returner = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(returner == true)
+                {
+                    break;
+                }
+                if(a[i] == 3)
+                {
+                    int counter = i;
+                    while(counter < a.Length-counter)
+                    {
+                        if(a[counter] == 5)
+                        {
+                            returner = true;
+                            break;
+                        }
+                        counter++;
+                    }
+                }
+            }
+            return returner;
+        }
+        public bool task120(int[] a)
+        {
+            bool returner = false;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if (a[i] == 5 && a[i + 1] == 5)
+                {
+                    returner = true;
+                }
+            }
+            for (int i = 0; i < a.Length-2; i++)
+            {
+                if (a[i] == 5 && a[i + 2] == 5)
+                {
+                    returner = true;
+                }
+            }
+            return returner;
+            /*
+                             if (numbers[i] ==5 && numbers[i + 1] == 5) return true;
+                if (i + 2 < len && numbers[i] == 5 && numbers[i + 2] == 5) return true;
+             */
+        }
+        public bool task119(int[] a)
+        {
+            bool returner = false;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if(a[i] == 3 && a[i+1] == 3 || a[i] == 5 && a[i+1] == 5)
+                {
+                    returner = true;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public bool task118(int[] a)
+        {
+            bool HasFive = false;
+            bool HasThree = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 5)
+                {
+                    HasFive = true;
+                }
+
+                if(a[i] == 3)
+                {
+                    HasThree = true;
+                }
+            }
+            if(HasFive == true && HasThree == true)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public bool task117(int[] a)
+        {
+            bool returner = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 3 || a[i] == 5)
+                {
+                    returner = true;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public bool task116(int[] a)
+        {
+            int ThreeCounter = 0;
+            int FiveCounter = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 3)
+                {
+                    ThreeCounter++;
+                }
+
+                if(a[i] == 5)
+                {
+                    FiveCounter++;
+                }
+            }
+            if(ThreeCounter > FiveCounter)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool task115(int[] a)
+        {
+            bool returner = false;
+            int summer = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 5)
+                {
+                    summer += a[i];
+                }
+            }
+            if(summer == 15)
+            {
+                returner = true;
+            }
+            return returner;
+        }
+        public bool task114(int[] a)
+        {
+            bool returner = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] == 5 || a[i] == 7)
+                {
+                    returner = true;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public bool task113(int[] a)
+        {
+            bool returner = false;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if(a[i] == 5 && a[i+1] == 5)
+                {
+                    returner = true;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public int task112(int[] a)
+        {
+            int summer = 0;
+            for (int i = 0; i < a.Length-1; i++)
+            {
+                if(a[i] != 5 && a[i+1] != 6)
+                {
+                    summer += a[i];
+                }
+                else
+                {
+                    i++;
+                }
+                if(i == a.Length-2)
+                {
+                    summer += a[i+1];
+                }
+            }
+            return summer;
+        }
+
+        public string task111(int[] a)
+        {
+            int summer = 0;
+            bool possiblediscontinue = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i].GetType() != typeof(int))
+                {
+                    possiblediscontinue = true;
+                }
+            }
+            if(possiblediscontinue != true)
+            {
+                for (int i = 0; i < a.Length; i++)
+                {
+                    if(a[i] != 17)
+                    {
+                        summer += a[i];
+                    }
+                }
+                return summer.ToString();
+            }
+            else
+            {
+                return "Wrong datatype has occured";
+            }
+        }
         public int task110(int[] a)
         {
             int MinUdgangspunkt = a[0];

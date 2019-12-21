@@ -7,18 +7,96 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
-            //110
-          //  Console.WriteLine(currentTask.task110(new[] { 1, 5, 7, 9, 10, 12 }));
-            //109
-       //     Console.WriteLine(currentTask.task109(new[] { 1, 5, 7, 9, 10, 12 }));
-            //108
-           // currentTask.task108(new[] { 1, 5, 7, 9, 11, 13 });
-            //107
-        /*    Console.WriteLine(currentTask.task107(new[] { 1 }));
-            Console.WriteLine(currentTask.task107(new[] { 1, 2, 9 }));
-            Console.WriteLine(currentTask.task107(new[] { 1, 2, 9, 3, 3 }));
-            Console.WriteLine(currentTask.task107(new[] { 1, 2, 3, 4, 5, 6, 7 }));
-            Console.WriteLine(currentTask.task107(new[] { 1, 2, 2, 3, 7, 8, 9, 10, 6, 5, 4 }));*/
+            //130
+            currentTask.task130(new[] { 1, 2, 0, 3, 5, 7, 0, 9, 11 });
+            //129
+          //  currentTask.task129(new[] { 1, 2, 3, 5, 7, 9, 11 });
+            //128
+          //  currentTask.task128(new[] { 1, 2, 3, 5, 7 });
+            //127
+          //  currentTask.task127(new[] { 10, 20, -30, -40, 50 });
+            //126
+           /* Console.WriteLine(currentTask.task126(new[] { 1, 2, 3, 5, 3, 7 }));
+            Console.WriteLine(currentTask.task126(new[] { 3, 7, 5, 5, 3, 7 }));
+            Console.WriteLine(currentTask.task126(new[] { 3, 7, 5, 5, 6, 7, 5 }));*/
+
+            //125
+            /*          Console.WriteLine(currentTask.task125(new[] { 3, 7, 5, 5, 3, 7 }, 2));
+                      Console.WriteLine(currentTask.task125(new[] { 3, 7, 5, 5, 3, 7 }, 3));
+                      Console.WriteLine(currentTask.task125(new[] { 3, 7, 5, 5, 3, 7, 5 }, 3));*/
+            //124
+            /*  Console.WriteLine(currentTask.task124(new[] { 3, 5, 5, 3, 7 }));
+              Console.WriteLine(currentTask.task124(new[] { 3, 5, 5, 4, 1, 5, 7 }));
+              Console.WriteLine(currentTask.task124(new[] { 3, 5, 5, 5, 5, 5 }));
+              Console.WriteLine(currentTask.task124(new[] { 2, 4, 5, 5, 6, 7, 5 }));*/
+            //123
+            /*  Console.WriteLine(currentTask.task123(new[] { 3, 5, 1, 5, 3, 5, 7, 5, 1, 5 }));
+              Console.WriteLine(currentTask.task123(new[] { 3, 5, 5, 5, 5, 5, 5 }));
+              Console.WriteLine(currentTask.task123(new[] { 3, 5, 2, 5, 4, 5, 7, 5, 8, 5 }));
+              Console.WriteLine(currentTask.task123(new[] { 2, 4, 5, 5, 5, 5 }));*/
+
+            //122
+            /* Console.WriteLine(currentTask.task122(new[] { 3, 5, 1, 3, 7 }));
+             Console.WriteLine(currentTask.task122(new[] { 1, 2, 3, 4 }));
+             Console.WriteLine(currentTask.task122(new[] { 3, 3, 5, 5, 5, 5 }));
+             Console.WriteLine(currentTask.task122(new[] { 2, 4, 5, 6 }));*/
+            //121
+            /*  Console.WriteLine(currentTask.task121(new[] { 3, 5, 1, 3, 7 }));
+              Console.WriteLine(currentTask.task121(new[] { 1, 2, 3, 4 }));
+              Console.WriteLine(currentTask.task121(new[] { 3, 3, 5, 5, 5, 5 }));
+              Console.WriteLine(currentTask.task121(new[] { 2, 5, 5, 7, 8, 10 }));*/
+            //120
+            /*  Console.WriteLine(currentTask.task120(new[] { 5, 5, 1, 5, 5 }));
+              Console.WriteLine(currentTask.task120(new[] { 1, 2, 3, 4 }));
+              Console.WriteLine(currentTask.task120(new[] { 3, 3, 5, 5, 5, 5 }));
+              Console.WriteLine(currentTask.task120(new[] { 1, 5, 5, 7, 8, 10 }));*/
+            //119
+            /* Console.WriteLine(currentTask.task119(new[] { 5, 5, 5, 5, 5 }));
+             Console.WriteLine(currentTask.task119(new[] { 1, 2, 3, 4 }));
+             Console.WriteLine(currentTask.task119(new[] { 3, 3, 5, 5, 5, 5 }));
+             Console.WriteLine(currentTask.task119(new[] { 1, 5, 5, 7, 8, 10 }));*/
+            //118
+            /*  Console.WriteLine(currentTask.task118(new[] { 5, 5, 5, 5, 5 }));
+              Console.WriteLine(currentTask.task118(new[] { 3, 3, 3, 3 }));
+              Console.WriteLine(currentTask.task118(new[] { 3, 3, 3, 5, 5, 5 }));
+              Console.WriteLine(currentTask.task118(new[] { 1, 6, 8, 10 }));*/
+            //117
+            /* Console.WriteLine(currentTask.task117(new[] { 5, 5, 5, 5, 5 }));
+             Console.WriteLine(currentTask.task117(new[] { 3, 3, 3, 3 }));
+             Console.WriteLine(currentTask.task117(new[] { 3, 3, 3, 5, 5, 5 }));
+             Console.WriteLine(currentTask.task117(new[] { 1, 6, 8, 10 }));*/
+            //116
+            /*    Console.WriteLine(currentTask.task116(new[] { 1, 5, 6, 9, 3, 3 }));
+                Console.WriteLine(currentTask.task116(new[] { 1, 5, 5, 5, 10, 17 }));
+                Console.WriteLine(currentTask.task116(new[] { 1, 3, 3, 5, 5, 5 }));/
+                //115
+                /*Console.WriteLine(currentTask.task115(new[] { 1, 5, 6, 9, 10, 17 }));
+                Console.WriteLine(currentTask.task115(new[] { 1, 5, 5, 5, 10, 17 }));
+                Console.WriteLine(currentTask.task115(new[] { 1, 1, 5, 5, 5, 5 }));*/
+            //114
+            /* Console.WriteLine(currentTask.task114(new[] { 1, 5, 6, 9, 10, 17 })); 
+             Console.WriteLine(currentTask.task114(new[] { 1, 4, 7, 9, 10, 17 }));
+             Console.WriteLine(currentTask.task114(new[] { 1, 1, 2, 9, 10, 17 }));*/
+            //113
+            /* Console.WriteLine(currentTask.task113(new[] { 1, 5, 6, 9, 10, 17 }));
+              Console.WriteLine(currentTask.task113(new[] { 1, 5, 5, 9, 10, 17 }));
+              Console.WriteLine(currentTask.task113(new[] { 1, 5, 5, 9, 10, 17, 5, 5 }));/
+              //112
+              //  Console.WriteLine(currentTask.task112(new[] { 1, 5, 6, 9, 10, 17 }));
+              //111
+              //Console.WriteLine(currentTask.task111(new[] { 1, 5, 7, 9, 10, 17 }));
+              //110
+              //  Console.WriteLine(currentTask.task110(new[] { 1, 5, 7, 9, 10, 12 }));
+              //109
+              //     Console.WriteLine(currentTask.task109(new[] { 1, 5, 7, 9, 10, 12 }));
+              //108
+              // currentTask.task108(new[] { 1, 5, 7, 9, 11, 13 });
+              //107
+              /*    Console.WriteLine(currentTask.task107(new[] { 1 }));
+                  Console.WriteLine(currentTask.task107(new[] { 1, 2, 9 }));
+                  Console.WriteLine(currentTask.task107(new[] { 1, 2, 9, 3, 3 }));
+                  Console.WriteLine(currentTask.task107(new[] { 1, 2, 3, 4, 5, 6, 7 }));
+                  Console.WriteLine(currentTask.task107(new[] { 1, 2, 2, 3, 7, 8, 9, 10, 6, 5, 4 }));*/
             //106
             // currentTask.task106(new[] { 1, 5, 7, 9, 11, 13 });
             //105
