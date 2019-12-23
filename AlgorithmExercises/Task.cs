@@ -1085,7 +1085,7 @@ namespace AlgorithmExercises
         }
         public string task64(string a)
         {
-                return a.Substring(0, a.Length / 2);
+            return a.Substring(0, a.Length / 2);
         }
         public string task63(string a)
         {
