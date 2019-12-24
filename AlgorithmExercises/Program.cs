@@ -12,7 +12,7 @@ namespace AlgorithmExercises
             //129
           //  currentTask.task129(new[] { 1, 2, 3, 5, 7, 9, 11 });
             //128
-          //  currentTask.task128(new[] { 1, 2, 3, 5, 7 });
+          //  currentTask.task128(new[] { 1, 2, 3, 5, 7 });//////
             //127
           //  currentTask.task127(new[] { 10, 20, -30, -40, 50 });
             //126
