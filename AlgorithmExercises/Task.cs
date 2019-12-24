@@ -6,6 +6,130 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public int task135(int[] a)
+        {
+            int FirstSum = 0;
+            int FirstAvg = 0;
+            int SecondSum = 0;
+            int SecondAvg = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (i < (a.Length / 2))
+                {
+                    FirstSum += a[i];
+                    if (i == (a.Length / 2) - 1)
+                    {
+                        FirstAvg = FirstSum / (a.Length / 2);
+                    }
+                }
+                else
+                {
+                    SecondSum += a[i];
+                    if (i == (a.Length - 1))
+                    {
+                        SecondAvg = SecondSum / (a.Length / 2);
+                    }
+                }
+            }
+            if (FirstAvg > SecondAvg)
+            {
+                return FirstAvg;
+            }
+            else
+            {
+                return SecondAvg;
+            }
+        }
+        public bool task134(int[] a)
+        {
+            bool returner = false;
+            int flag = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (flag < 2)
+                {
+                    if (a[i] == 15)
+                    {
+                        flag++;
+                    }
+                    else
+                    {
+                        flag = 0;
+                    }
+                }
+
+                if (flag == 2)
+                {
+                    returner = true;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public bool task133(int[] a)
+        {
+            bool returner = true;
+            for (int i = 0; i < a.Length - 1; i++)
+            {
+                if (a[i + 1] < a[i])
+                {
+                    returner = false;
+                    break;
+                }
+            }
+            return returner;
+        }
+        public void task132(int[] a)
+        {
+            //1, 2, 5, 3, 5, 4, 6, 9, 11 
+            int EvenIndex = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 0)
+                {
+                    int derp = a[i];
+                    a[i] = a[EvenIndex];
+                    a[EvenIndex] = derp;
+                    EvenIndex++;
+                }
+            }
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+        }
+        public void task131(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] == 5)
+                {
+                    for (int j = i; j < a.Length; j++)
+                    {
+                        if (j < a.Length - 1)
+                        {
+                            a[j] = a[j + 1];
+                        }
+                        else
+                        {
+                            a[j] = 0;
+                        }
+
+                    }
+                }
+            }
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+            // 1 2 0 3 0 7 0 9 11
+            // 1 2 3 0 7 0 9 11 0
+            // 1 2 3 7 0 9 11 0 0
+            // 1 2 3 7 9 11 0 0 0
+            /*Så det vi gør når vi finder et 0 er at vi flytter alle index til højre for 0 et skridt
+             til venstre og sætter 0 ind som sidste index.*/
+            // 1 2 3 7 9 11 0 0 0
+        }
         public void task130(int[] a)
         {
             /*1, 2, 0, 3, 5, 7, 0, 9, 11*/
