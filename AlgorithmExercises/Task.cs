@@ -6,6 +6,92 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public void task140(int[] a, int b)
+        {
+            int[] NewArr = new int[b];
+            int NewArrCounter = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(NewArrCounter < NewArr.Length)
+                {
+                    if (a[i] % 2 != 0)
+                    {
+                        NewArr[NewArrCounter] = a[i];
+                        NewArrCounter++;
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
+            for (int i = 0; i < NewArr.Length; i++)
+            {
+                Console.WriteLine(NewArr[i]);
+            }
+        }
+        public bool task139(int a)
+        {
+            string AStr = a.ToString();
+            if(AStr.Contains('2'))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public void task138(string[] a, int b)
+        {
+            int counter = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i].Length == b)
+                {
+                    counter++;
+                }
+            }
+            string[] NewArr = new string[counter];
+            int NewArrCounter = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i].Length == b)
+                {
+                    NewArr[NewArrCounter] = a[i];
+                    NewArrCounter++;
+                }
+            }
+            for (int i = 0; i < NewArr.Length; i++)
+            {
+                Console.WriteLine(NewArr[i]);
+            }
+        }
+
+        public void task137(string[] a, int antal)
+        {
+            string[] NewArr = new string[antal];
+            for (int i = 0; i < antal; i++)
+            {
+                NewArr[i] = a[i];
+            }
+            for (int i = 0; i < NewArr.Length; i++)
+            {
+                Console.WriteLine(NewArr[i]);
+            }
+        }
+        public int task136(string[] a, int len)
+        {
+            int counter = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i].Length == len)
+                {
+                    counter++;
+                }
+            }
+            return counter;
+        }
         public int task135(int[] a)
         {
             int FirstSum = 0;
