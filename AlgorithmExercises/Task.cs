@@ -6,6 +6,54 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public void task150(List<int> a)
+        {
+            List<int> newList = new List<int>();
+            for (int i = 0; i < a.Count; i++)
+            {
+                if(a[i] % 10 != 7)
+                {
+                    newList.Add(a[i]);
+                }
+            }
+            for (int i = 0; i < newList.Count; i++)
+            {
+                Console.WriteLine(newList[i]);
+            }
+        }
+        public void task149(List<int> a)
+        {
+            List<int> newList = new List<int>();
+            for (int i = 0; i < a.Count; i++)
+            {
+                if(a[i] < 4)
+                {
+                    newList.Add(a[i]);
+                }
+            }
+            for (int i = 0; i < newList.Count; i++)
+            {
+                Console.WriteLine(newList[i]);
+            }
+        }
+        public void task148(string[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                string AIndex = a[i];
+                for (int j = 0; j < AIndex.Length; j++)
+                {
+                    if(AIndex[j] == 'a' || AIndex[j] == 'A')
+                    {
+                       a[i] = AIndex.Remove(j, 1);
+                    }
+                }
+            }
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+        }
         public void task147(string[] a)
         {
             string AlphabetSmall = "abcdefghijklmnopqrstuvwxyzæøå";
@@ -28,8 +76,6 @@ namespace AlgorithmExercises
                 }
                 a[i] = derpstring;
                 Console.WriteLine(a[i]);
-                /*a[i] = a[i].ToUpper();
-                Console.WriteLine(a[i]);*/
             }
 
         }

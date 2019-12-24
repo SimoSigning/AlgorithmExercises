@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AlgorithmExercises
 {
@@ -7,8 +8,14 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //150
+           // currentTask.task150(new List<int> { 10, 22, 35, 47, 53, 67 });
+            //149
+         //   currentTask.task149(new List<int> { 0, -2, 1, 2, 3, 5, 4, 7, 8 });
+            //148
+         //   currentTask.task148(new string[] { "abc", "cdaef", "js", "php" });
             //147
-            currentTask.task147(new string[] { "Abc", "cdef", "js", "php" });
+          //  currentTask.task147(new string[] { "Abc", "cdef", "js", "php" });
             //146
        //     currentTask.task146(new int[] { 10, 22, 35, 41 });
             //145
