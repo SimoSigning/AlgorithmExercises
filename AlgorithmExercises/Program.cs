@@ -7,12 +7,26 @@ namespace AlgorithmExercises
         static void Main(string[] args)
         {
             Task currentTask = new Task();
+            //147
+            currentTask.task147(new string[] { "Abc", "cdef", "js", "php" });
+            //146
+       //     currentTask.task146(new int[] { 10, 22, 35, 41 });
+            //145
+           // currentTask.task145(new int[] { 1, 2, 3, 4 });
+            //144
+          //  currentTask.task144(new string[] { "1", "2", "3", "4" });
+            //143
+           // currentTask.task143(new string[] { "1", "2", "3", "4" });
+            //142
+            //  currentTask.task142(new int[] { 1, 2, 3, 4 });
+            //141
+            //  currentTask.task141(new int[] { 1, 2, 3, 4 });
             //140
-            currentTask.task140(new[] { 1, 2, 3, 5, 7, 9, 10 }, 3);
+            //  currentTask.task140(new[] { 1, 2, 3, 5, 7, 9, 10 }, 3);
             //139
-          /*  Console.WriteLine(currentTask.task139(123));
-            Console.WriteLine(currentTask.task139(13));
-            Console.WriteLine(currentTask.task139(222));*/
+            /*  Console.WriteLine(currentTask.task139(123));
+              Console.WriteLine(currentTask.task139(13));
+              Console.WriteLine(currentTask.task139(222));*/
             //138
             // currentTask.task138(new[] { "a", "aaa", "b", "bbb", "c", "ccc" }, 3);
             //137

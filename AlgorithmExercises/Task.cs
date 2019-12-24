@@ -6,6 +6,83 @@ namespace AlgorithmExercises
 {
     class Task
     {
+        public void task147(string[] a)
+        {
+            string AlphabetSmall = "abcdefghijklmnopqrstuvwxyzæøå";
+            string AlphabetBig = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
+            for (int i = 0; i < a.Length; i++)
+            {
+                string derpstring = "";
+                int IndexLength = a[i].Length;
+                for (int j = 0; j < IndexLength; j++)
+                {
+                    char hmm = a[i][j];
+                    for (int k = 0; k < AlphabetBig.Length; k++)
+                    {
+                        if(hmm == AlphabetSmall[k] || hmm == AlphabetBig[k])
+                        {
+                            hmm = AlphabetBig[k];
+                            derpstring += hmm;
+                        }
+                    }
+                }
+                a[i] = derpstring;
+                Console.WriteLine(a[i]);
+                /*a[i] = a[i].ToUpper();
+                Console.WriteLine(a[i]);*/
+            }
+
+        }
+        public void task146(int[] a)
+        {
+            int[] NewArr = new int[a.Length];
+            for (int i = 0; i < a.Length; i++)
+            {
+                string Index = a[i].ToString();
+                NewArr[i] = int.Parse(Index[Index.Length - 1].ToString());
+                Console.WriteLine(NewArr[i]);
+            }
+        }
+        public void task145(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = (a[i] + 2) * 5;
+                Console.WriteLine(a[i]);
+            }
+        }
+        public void task144(string[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = a[i] + a[i] + a[i] + a[i];
+                Console.WriteLine(a[i]);
+            }
+        }
+        public void task143(string[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = "#" + a[i] + "#";
+                Console.WriteLine(a[i]);
+            }
+        }
+        public void task142(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = a[i] * a[i] * a[i];
+                Console.WriteLine(a[i]);
+            }
+        }
+        public void task141(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = a[i] * 3;
+                Console.WriteLine(a[i]);
+            }
+        }
         public void task140(int[] a, int b)
         {
             int[] NewArr = new int[b];
